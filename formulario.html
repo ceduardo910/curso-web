@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Curso Completo Do Desenvolvedor Web</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <form method="POST" action="form.php">
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite o seu nome" required>
+        </div class="form-group">
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="seu@email.com" required>
+        </div>
+
+
+        <div>
+            <label for="nascimento">Nascimento</label>
+            <input type="date" name="nascimento" id="nascimento" class="form-control" required min="2016-01-01"
+                max="2020-01-25">
+        </div>
+
+
+        <div>
+            <label>Sexo</label>
+            <input type="radio" name="sexo" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino">
+            <label for="feminino">Feminino</label>
+
+            <div>
+
+                <div class="form-group">
+                    <label for="li">Li o contrato e aceito</label>
+                    <input type="checkbox" name="li" id="li" required checked>
+                </div>
+
+                <div class="form-group">
+                    <label for="volume">Volume</label>
+                    <input type="range" name="volume" id="volume" min="0" max="100" value="25">
+                </div>
+
+                <div>
+
+                    <div class="form-group">
+                        <label for="meter">Bateria</label>
+                        <meter min="0" name="meter" max="100" low="15" value="12">12</meter>
+                    </div>
+
+                    <div>
+
+                        <div class="form-group">
+                            <label for="meter">Carregando</label>
+                            <progress min="0" name="p" max="100" value="60">60%</progress>
+                        </div>
+
+                        <div>
+
+                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                        </div>
+    </form>
+
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
