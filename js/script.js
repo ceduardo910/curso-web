@@ -16,7 +16,7 @@ document.querySelector("#calcular").addEventListener("click", function () {
     if (valora.length > 0 && valorb.length > 0) {
         alert(parseInt(valora) + parseInt(valorb));
     }else{
-        alert("Digite os Valores para o cálculo")
+        alert("Digite os Valores")
     }
 });
 
